@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liste des produits</title>
+</head>
+<body>
+    <h1>Liste des produits</h1>
+    <ul>
+        {% for product in products %}
+            <li>{{ product }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Résultat du dump du tableau de produits :</h2>
+    {{ dump(products) }}
+</body>
+</html>
